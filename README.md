@@ -221,4 +221,4 @@ The development process followed these steps:
 - Wouter (routing)
 - Vite
 - Express
-- Drizzle ORM
+- Drizzle ORM"# Assignment-ntegral-Solutions" 
