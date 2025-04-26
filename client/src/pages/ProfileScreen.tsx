@@ -56,7 +56,12 @@ export default function ProfileScreen() {
       
       <div className="flex justify-between items-center mb-6">
         <h2 className="text-xl font-bold dark:text-white text-black">Profile</h2>
-        <Button variant="ghost" size="icon" className="text-gray-500 dark:text-gray-400">
+        <Button 
+          variant="ghost" 
+          size="icon" 
+          className="text-gray-500 dark:text-gray-400"
+          onClick={() => setActiveTab('settings')}
+        >
           <Settings className="h-5 w-5" />
         </Button>
       </div>
@@ -108,7 +113,10 @@ export default function ProfileScreen() {
             <Card className="bg-white dark:bg-gray-800">
               <CardContent className="p-0">
                 <div className="divide-y divide-gray-200 dark:divide-gray-700">
-                  <div className="flex items-center justify-between p-4">
+                  <div 
+                    className="flex items-center justify-between p-4 cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors"
+                    onClick={() => setActiveTab('settings')}
+                  >
                     <div className="flex items-center">
                       <User className="h-5 w-5 text-gray-500 dark:text-gray-400 mr-3" />
                       <span className="text-sm dark:text-white text-gray-800">Personal Information</span>
@@ -143,7 +151,11 @@ export default function ProfileScreen() {
           
           <PackingChecklist compact={true} />
           
-          <Button variant="destructive" className="w-full">
+          <Button 
+            variant="destructive" 
+            className="w-full"
+            onClick={() => navigate('/')}
+          >
             <LogOut className="h-4 w-4 mr-2" /> Log Out
           </Button>
         </TabsContent>
@@ -184,7 +196,12 @@ export default function ProfileScreen() {
             </div>
             <div className="p-3 flex justify-between items-center">
               <div className="flex items-center">
-                <Button variant="outline" size="sm" className="text-xs h-7">
+                <Button 
+                  variant="outline" 
+                  size="sm" 
+                  className="text-xs h-7"
+                  onClick={() => navigate('/dashboard')}
+                >
                   Manage Trip
                 </Button>
               </div>
@@ -207,7 +224,11 @@ export default function ProfileScreen() {
           
           <div className="grid grid-cols-2 gap-3">
             {savedTrips.map((trip) => (
-              <Card key={trip.id} className="bg-white dark:bg-gray-800 overflow-hidden">
+              <Card 
+                key={trip.id} 
+                className="bg-white dark:bg-gray-800 overflow-hidden cursor-pointer"
+                onClick={() => navigate('/dashboard')}
+              >
                 <div className="h-24 relative">
                   <img 
                     src={trip.imageUrl} 
@@ -218,6 +239,10 @@ export default function ProfileScreen() {
                     variant="ghost" 
                     size="icon" 
                     className="absolute top-1 right-1 h-6 w-6 bg-black/30 text-white hover:bg-black/50"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      alert('Destination removed from favorites');
+                    }}
                   >
                     <Heart className="h-3 w-3 fill-white" />
                   </Button>
@@ -334,7 +359,15 @@ export default function ProfileScreen() {
                 </div>
               </div>
               
-              <Button className="w-full mt-4">Save Preferences</Button>
+              <Button 
+                className="w-full mt-4"
+                onClick={() => {
+                  alert('Preferences saved!');
+                  setActiveTab('profile');
+                }}
+              >
+                Save Preferences
+              </Button>
             </CardContent>
           </Card>
         </TabsContent>
