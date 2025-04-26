@@ -21,20 +21,26 @@ export function BottomNavigation() {
       </button>
       
       <button 
-        className="flex flex-col items-center justify-center px-4 py-2 text-gray-500 dark:text-gray-400"
+        onClick={() => navigate('/search')}
+        className={cn(
+          "flex flex-col items-center justify-center px-4 py-2",
+          isActive('/search') ? "text-primary dark:text-primary" : "text-gray-500 dark:text-gray-400"
+        )}
       >
         <Search className="h-6 w-6" />
         <span className="text-xs mt-1">Search</span>
       </button>
       
       <button 
+        onClick={() => navigate('/dashboard')}
         className="flex flex-col items-center justify-center px-4 py-2 text-gray-500 dark:text-gray-400"
       >
         <Plus className="h-6 w-6" />
-        <span className="text-xs mt-1">Add</span>
+        <span className="text-xs mt-1">Plan</span>
       </button>
       
       <button 
+        onClick={() => navigate('/dashboard')}
         className="flex flex-col items-center justify-center px-4 py-2 text-gray-500 dark:text-gray-400"
       >
         <Heart className="h-6 w-6" />
@@ -42,7 +48,11 @@ export function BottomNavigation() {
       </button>
       
       <button 
-        className="flex flex-col items-center justify-center px-4 py-2 text-gray-500 dark:text-gray-400"
+        onClick={() => navigate('/profile')}
+        className={cn(
+          "flex flex-col items-center justify-center px-4 py-2",
+          isActive('/profile') ? "text-primary dark:text-primary" : "text-gray-500 dark:text-gray-400"
+        )}
       >
         <User className="h-6 w-6" />
         <span className="text-xs mt-1">Profile</span>

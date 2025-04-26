@@ -8,7 +8,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { 
   Search, 
   MapPin, 
-  Hotel, 
+  Building2, 
   Map, 
   Calendar, 
   Clock, 
@@ -19,7 +19,7 @@ import {
   History
 } from "lucide-react";
 import { cn } from "@/lib/utils";
-import { destinations, hotels, activities, Activity, Hotel, Destination } from "@/data/mockData";
+import { destinations, hotels, activities, Activity } from "@/data/mockData";
 
 type SearchResult = {
   id: string;
@@ -160,7 +160,7 @@ export default function SearchScreen() {
       case 'destination':
         return <Map className="h-4 w-4 text-blue-500" />;
       case 'hotel':
-        return <Hotel className="h-4 w-4 text-green-500" />;
+        return <MapPin className="h-4 w-4 text-green-500" />;
       case 'activity':
         return <Clock className="h-4 w-4 text-amber-500" />;
       default:

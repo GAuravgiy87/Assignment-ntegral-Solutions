@@ -7,6 +7,8 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import OnboardingScreen from "@/pages/OnboardingScreen";
 import DashboardScreen from "@/pages/DashboardScreen";
 import DetailsScreen from "@/pages/DetailsScreen";
+import SearchScreen from "@/pages/SearchScreen";
+import ProfileScreen from "@/pages/ProfileScreen"; 
 import NotFound from "@/pages/not-found";
 import ThemeToggle from "@/components/ThemeToggle";
 import NavigationTabs from "@/components/NavigationTabs";
@@ -40,6 +42,8 @@ function Router() {
               setActiveView("details");
             }} />
           </Route>
+          <Route path="/search" component={SearchScreen} />
+          <Route path="/profile" component={ProfileScreen} />
           <Route component={NotFound} />
         </Switch>
 
