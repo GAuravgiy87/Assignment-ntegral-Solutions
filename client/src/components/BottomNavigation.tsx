@@ -1,5 +1,5 @@
 import { useLocation } from "wouter";
-import { Home, Search, Plus, Heart, User } from "lucide-react";
+import { Home, Search, Compass, Heart, User } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 export function BottomNavigation() {
@@ -32,11 +32,14 @@ export function BottomNavigation() {
       </button>
       
       <button 
-        onClick={() => navigate('/dashboard')}
-        className="flex flex-col items-center justify-center px-4 py-2 text-gray-500 dark:text-gray-400"
+        onClick={() => navigate('/explore')}
+        className={cn(
+          "flex flex-col items-center justify-center px-4 py-2",
+          isActive('/explore') ? "text-primary dark:text-primary" : "text-gray-500 dark:text-gray-400"
+        )}
       >
-        <Plus className="h-6 w-6" />
-        <span className="text-xs mt-1">Plan</span>
+        <Compass className="h-6 w-6" />
+        <span className="text-xs mt-1">Explore</span>
       </button>
       
       <button 
