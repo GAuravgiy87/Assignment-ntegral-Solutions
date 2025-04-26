@@ -3,6 +3,19 @@
 A responsive React-based travel planning application that follows pixel-perfect implementation of Figma designs. This application helps users plan their trips by selecting destinations, duration, and travel companions, then presents detailed information about accommodations, activities, and flights.
 
 ## Getting Started
+PC Responsive
+![Screenshot 2025-04-26 180229](https://github.com/user-attachments/assets/023a91eb-09da-4f1b-8369-6fbb707806b8)
+![Screenshot 2025-04-26 180245](https://github.com/user-attachments/assets/5eea9ec9-2f55-4a95-85ab-4c2a2ad295c1)
+![Screenshot 2025-04-26 180305](https://github.com/user-attachments/assets/209541dc-14cc-4cb4-a015-fb5781e94994)
+![Screenshot 2025-04-26 180324](https://github.com/user-attachments/assets/19451038-fad2-4ee4-9abf-975a8a7db3e3)
+
+Mobile Responsive
+![Screenshot_2025-04-26-18-01-40-270_com android chrome](https://github.com/user-attachments/assets/4b9f2608-9a6c-455f-9b06-3221a39a8327)
+![Screenshot_2025-04-26-18-01-44-360_com android chrome](https://github.com/user-attachments/assets/66a8a798-bb6c-4d4c-9570-dbff407360d8)
+![Screenshot_2025-04-26-18-01-40-270_com android chrome](https://github.com/user-attachments/assets/aa3aeac5-fbfd-4d01-ba9f-7157ccaff8a1)
+![Screenshot_2025-04-26-18-01-22-674_com android chrome](https://github.com/user-attachments/assets/9c5197d6-4edd-4bec-a60b-ddcdf27547f1)
+![Screenshot_2025-04-26-18-01-32-219_com android chrome](https://github.com/user-attachments/assets/ceab61ce-cccb-42ae-a7a7-a9fc9f6c57f3)
+![Screenshot_2025-04-26-18-01-50-022_com android chrome](https://github.com/user-attachments/assets/97856954-6bb3-4bc4-8825-a9b992a7645c)
 
 ### Prerequisites
 
@@ -221,4 +234,4 @@ The development process followed these steps:
 - Wouter (routing)
 - Vite
 - Express
-- Drizzle ORM"# Assignment-ntegral-Solutions" 
+- Drizzle ORM"# Assignment-Integral-Solutions" 
