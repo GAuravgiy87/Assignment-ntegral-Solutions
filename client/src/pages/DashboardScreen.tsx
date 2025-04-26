@@ -102,7 +102,7 @@ export default function DashboardScreen({ onActivityClick }: DashboardScreenProp
           <div>
             <div className="flex justify-between items-center mb-2">
               <h3 className="text-sm font-medium dark:text-gray-300 text-gray-600">Flight Details</h3>
-              <a href="#" className="text-xs text-primary font-medium">View All</a>
+              <Button variant="link" size="sm" className="text-xs text-primary font-medium h-auto p-0" onClick={() => setActiveTab("itinerary")}>View All</Button>
             </div>
             <div className="bg-blue-600 text-white p-4 rounded-xl">
               <div className="flex justify-between items-center mb-2">
@@ -128,7 +128,7 @@ export default function DashboardScreen({ onActivityClick }: DashboardScreenProp
           <div>
             <div className="flex justify-between items-center mb-2">
               <h3 className="text-sm font-medium dark:text-gray-300 text-gray-600">Accommodation</h3>
-              <a href="#" className="text-xs text-primary font-medium">View All</a>
+              <Button variant="link" size="sm" className="text-xs text-primary font-medium h-auto p-0" onClick={() => setActiveTab("tools")}>View All</Button>
             </div>
             <div className="grid grid-cols-2 gap-3">
               {recommendedHotels.map((hotel) => (
@@ -160,7 +160,7 @@ export default function DashboardScreen({ onActivityClick }: DashboardScreenProp
           <div>
             <div className="flex justify-between items-center mb-2">
               <h3 className="text-sm font-medium dark:text-gray-300 text-gray-600">Activities</h3>
-              <a href="#" className="text-xs text-primary font-medium">View All</a>
+              <Button variant="link" size="sm" className="text-xs text-primary font-medium h-auto p-0" onClick={() => setActiveTab("itinerary")}>View All</Button>
             </div>
 
             {/* Activity Filters */}

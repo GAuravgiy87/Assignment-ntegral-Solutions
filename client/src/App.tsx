@@ -32,9 +32,8 @@ function Router() {
   return (
     <div className="min-h-screen bg-background">
       <ThemeToggle />
-      <NavigationTabs />
       
-      <main className="pt-12 pb-16 h-full overflow-y-auto">
+      <main className="pt-2 pb-16 h-full overflow-y-auto">
         <Switch>
           <Route path="/" component={OnboardingScreen} />
           <Route path="/dashboard">

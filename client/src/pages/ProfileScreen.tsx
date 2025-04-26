@@ -151,7 +151,13 @@ export default function ProfileScreen() {
         <TabsContent value="trips" className="space-y-4 mt-4">
           <div className="flex justify-between items-center mb-2">
             <h3 className="text-sm font-medium dark:text-gray-300 text-gray-600">Upcoming Trips</h3>
-            <Button variant="link" className="p-0 h-auto text-primary text-xs">View All</Button>
+            <Button 
+              variant="link" 
+              className="p-0 h-auto text-primary text-xs"
+              onClick={() => navigate('/dashboard')}
+            >
+              View All
+            </Button>
           </div>
           
           <Card className="bg-white dark:bg-gray-800 overflow-hidden">
@@ -190,7 +196,13 @@ export default function ProfileScreen() {
           
           <div className="flex justify-between items-center mb-2 mt-6">
             <h3 className="text-sm font-medium dark:text-gray-300 text-gray-600">Saved Destinations</h3>
-            <Button variant="link" className="p-0 h-auto text-primary text-xs">View All</Button>
+            <Button 
+              variant="link" 
+              className="p-0 h-auto text-primary text-xs"
+              onClick={() => navigate('/explore')}
+            >
+              View All
+            </Button>
           </div>
           
           <div className="grid grid-cols-2 gap-3">
